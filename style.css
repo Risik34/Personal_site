@@ -2,3 +2,32 @@ html {
   height: 100%;
   width: 100%;
 }
+
+hr {
+    border-top:1px solid #005B41;
+    width:10%;
+    
+    
+  }
+  h2 {
+    font:25px "Brush Script MT",cursive;
+    display: inline;
+    margin: 0px 0px 0px 20px;
+  }
+  h3 {
+    margin-left :10px;
+    font: 15px "Times New Roman" ,Serif }
+
+body {
+background-color :#0F0F0F;
+  color:#10e8cb;
+}
+  a{
+    color:hotpink;
+    display:inline;
+  }
+    
+.main-pic{
+  height:100px;
+  width:100px;
+}
