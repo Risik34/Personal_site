@@ -1,8 +1,27 @@
+/*
+font-family: 'Courgette', cursive;
+font-family: 'Dosis', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Satisfy', cursive;
+*/
+
+
+:root
+{
+  --color-primary:#EEEEEE;
+  --color-light:#64CCC5;
+  --color-dark:#053B50;
+  --color-medium:#176B87;
+}
 html {
   height: 100%;
   width: 100%;
 }
 
+body {
+background-color :var(--color-primary);
+
+}
 hr {
     border-top:1px solid #005B41;
     width:10%;
@@ -10,18 +29,19 @@ hr {
     
   }
   h2 {
-    font:25px "Brush Script MT",cursive;
+    
+    
     display: inline;
     margin: 0px 0px 0px 20px;
   }
   h3 {
     margin-left :10px;
-    font: 15px "Times New Roman" ,Serif }
+    font-family: 'Playfair Display', serif;
+    /*
+    font: 15px "Times New Roman" ,Serif }*/
 
-body {
-background-color :#0F0F0F;
-  color:#10e8cb;
-}
+  }
+
   a{
     color:hotpink;
     display:inline;
@@ -30,4 +50,51 @@ background-color :#0F0F0F;
 .main-pic{
   height:100px;
   width:100px;
+  padding:10px;
+  
+  
 }
+.header{
+  position:relative;
+  text-align: center;
+}
+
+.name{
+  font-family: 'Courgette', cursive;
+color: var(--color-dark);
+  position:relative;
+  right:10px;
+}
+
+
+.mountain-img
+{
+  width:100vw;
+  height:300px;
+  object-fit:cover;
+  position:relative;
+  right:10px;
+  
+}
+
+
+  .personal {
+    display:inline-block;
+    position:absolute;
+    top:300px;
+    right:5px;
+    background-color:grey;
+    padding-right:16px;
+  }
+  .personal-details{
+
+    font-weight: bold;
+    text-align: center;
+    
+  }
+  .personal-ul{
+    margin:0px;
+    padding:6px;
+    text-align:right;
+    direction:rtl;
+  }
