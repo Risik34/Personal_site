@@ -1,100 +1,153 @@
-/*
-font-family: 'Courgette', cursive;
-font-family: 'Dosis', sans-serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Satisfy', cursive;
-*/
-
-
-:root
-{
-  --color-primary:#EEEEEE;
-  --color-light:#64CCC5;
-  --color-dark:#053B50;
-  --color-medium:#176B87;
+/* Variable Declarations */
+:root {
+    --color-primary: #EEEEEE;
+    --color-light: #64CCC5;
+    --color-dark: #053B50;
+    --color-medium: #176B87;
 }
-html {
-  height: 100%;
-  width: 100%;
+
+/* Global Styles */
+html, body {
+    height: 100%;
+    width: 100%;
 }
 
 body {
-background-color :var(--color-primary);
-
-}
-hr {
-    border-top:1px solid #005B41;
-    width:10%;
-    
-    
-  }
-  h2 {
-    
-    
-    display: inline;
-    margin: 0px 0px 0px 20px;
-  }
-  h3 {
-    margin-left :10px;
-    font-family: 'Playfair Display', serif;
-    /*
-    font: 15px "Times New Roman" ,Serif }*/
-
-  }
-
-  a{
-    color:hotpink;
-    display:inline;
-  }
-    
-.main-pic{
-  height:100px;
-  width:100px;
-  padding:10px;
-  
-  
-}
-.header{
-  position:relative;
-  text-align: center;
-}
-
-.name{
-  font-family: 'Courgette', cursive;
-color: var(--color-dark);
-  position:relative;
-  right:10px;
-}
-
-
-.mountain-img
-{
-  width:100vw;
-  height:300px;
-  object-fit:cover;
-  position:relative;
-  right:10px;
-  
-}
-
-
-  .personal {
-    display:inline-block;
-    position:absolute;
-    top:300px;
-    right:5px;
-    background-color:grey;
-    padding-right:16px;
-  }
-  .personal-details{
-
-    font-weight: bold;
+    background-color: var(--color-primary);
+    position: relative;
     text-align: center;
+}
+
+/* Header Styles */
+.header {
+    position: relative;
+    text-align: center;
+}
+
+.name {
+    font-family: 'Courgette', cursive;
+    color: var(--color-medium);
+    font-size: 1.7em;
+    position: relative;
+    top: 10px;
+}
+
+/* Image Styles */
+.main-pic {
+    height: 180px;
+    width: 180px;
+    padding: 10px;
+    position: relative;
+    bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    z-index: 1;
+}
+
+.splash-img {
+    width: 100vw;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    right: 10px;
+    bottom: 20px;
+}
+
+/* Horizontal Line Style */
+hr {
+    border-top: 1.5px solid #053B50;
+    width: 20%;
+}
+
+/* Quote Styles */
+.quote {
+  
+    color: #176B87;
+    margin:10px;
+    font-family: 'Satisfy', cursive;
+    background-color:white;
+    padding: 5px 2px;
+    border-radius: 10px;
+}
+
+.quote span {
+    font-weight: bold;
+}
+
+/* Hobbies Section Styles */
+.hobbies {
+    margin-top: 20px;
     
-  }
-  .personal-ul{
-    margin:0px;
-    padding:6px;
-    text-align:right;
-    direction:rtl;
-  }
+}
+
+/* Hobby Styles */
+.hobby {
+  
+    text-align: left;
+    margin: 20px;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+
+
+.hobby-img {
+    width: 38%;
+    height: 38%;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    margin-right:20px;
+}
+
+.hobby-img-music {
+    width: 38%;
+    height: 38%;
+    object-fit: cover;
+    border-radius: 50%;
+    float: right;
+    margin-left:20px;
+}
+
+
+
+/* Hobby Text Styles */
+.hobby h4 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color:var(--color-medium);
+    margin-bottom:8px;
+}
+
+.hobby p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+
+/* Contact Details Style */
+h3 {
+    margin-left: 10px;
+    font-family: 'Playfair Display', serif;
+    text-decoration: underline;
+    color:var(--color-medium);
+}
+
+a {
+  
+}
+
+.footer{
+  background-color:var(--color-light);
+  border-radius: 5px;
+}
+
+.footer h5{
+  display:inline-block;
+  margin:20px 10px;
+  
+}
